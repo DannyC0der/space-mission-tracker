@@ -24,9 +24,9 @@ function App() {
 
 export default App;*/
 
-// frontend/src/App.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Map from './Map';  // Import the Map component
 
 const App = () => {
     const [missions, setMissions] = useState([]);
@@ -48,9 +48,11 @@ const App = () => {
                     </div>
                 ))}
             </div>
+            <Map /> {/* Include the Map component */}
         </div>
     );
 };
 
 export default App;
+
 
